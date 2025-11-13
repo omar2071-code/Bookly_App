@@ -20,8 +20,8 @@ class _SplashViewBodyState extends State<SplashViewBody>
   void initState() {
     super.initState();
     //create animation and give time
-    InitSlidingAnimation();
-    NavigateToHome();
+    initSlidingAnimation();
+    navigateToHome();
   }
 
   @override
@@ -47,7 +47,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
     );
   }
 
-  void NavigateToHome() {
+  void navigateToHome() {
     Future.delayed(Duration(seconds: 2), () {
       Get.to(
         () => HomeView(),
@@ -57,7 +57,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
     });
   }
 
-  void InitSlidingAnimation() {
+  void initSlidingAnimation() {
     //create animation and give time
     animationController = AnimationController(
       vsync: this,
