@@ -10,7 +10,7 @@ class CustomBookImage extends StatelessWidget {
       aspectRatio: 2.7 / 4,
       child: Container(
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(16),
+          borderRadius: BorderRadius.circular(12),
           color: Colors.blue,
           image: DecorationImage(
             image: AssetImage(AssetData.testImage),
