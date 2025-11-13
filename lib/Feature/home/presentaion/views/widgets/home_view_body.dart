@@ -18,7 +18,37 @@ class HomeViewBody extends StatelessWidget {
         SizedBox(height: 40),
         Padding(
           padding: const EdgeInsets.only(left: 15.0),
-          child: Text('Best Seller', style: Style.titleMedium),
+          child: Text('Best Seller', style: Style.textStyle18),
+        ),
+        SizedBox(height: 20),
+        BestSellerListView(),
+      ],
+    );
+  }
+}
+
+class BestSellerListView extends StatelessWidget {
+  const BestSellerListView({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        SizedBox(
+          height: 140,
+          child: AspectRatio(
+            aspectRatio: 2.7 / 4,
+            child: Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(16),
+
+                image: DecorationImage(
+                  image: AssetImage(AssetData.testImage),
+                  fit: BoxFit.fill,
+                ),
+              ),
+            ),
+          ),
         ),
       ],
     );
