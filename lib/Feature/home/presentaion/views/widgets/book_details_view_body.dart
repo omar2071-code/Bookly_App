@@ -3,7 +3,6 @@ import 'package:bookly/Feature/home/presentaion/views/widgets/custom_app_bar_boo
 import 'package:bookly/Feature/home/presentaion/views/widgets/custom_book_action.dart';
 import 'package:bookly/Feature/home/presentaion/views/widgets/custom_book_image.dart';
 import 'package:bookly/Feature/home/presentaion/views/widgets/list_view_book_detail_builder.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:bookly/core/utils/style.dart';
 import 'package:flutter/material.dart';
 
