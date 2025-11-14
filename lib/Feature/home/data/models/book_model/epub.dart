@@ -1,12 +1,12 @@
 import 'package:equatable/equatable.dart';
 
-class Pdf extends Equatable {
+class Epub extends Equatable {
   final bool? isAvailable;
 
-  const Pdf({this.isAvailable});
+  const Epub({this.isAvailable});
 
-  factory Pdf.fromJson(Map<String, dynamic> json) =>
-      Pdf(isAvailable: json['isAvailable'] as bool?);
+  factory Epub.fromJson(Map<String, dynamic> json) =>
+      Epub(isAvailable: json['isAvailable'] as bool?);
 
   Map<String, dynamic> toJson() => {'isAvailable': isAvailable};
 
