@@ -20,7 +20,10 @@ class BookDetailsViewBody extends StatelessWidget {
           CustomAppBarBookDetailsView(),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: width * .29),
-            child: CustomBookImage(),
+            child: CustomBookImage(
+              imageUrl:
+                  'https://books.google.com/books/content?id=FxMSp72ZghkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api',
+            ),
           ),
           SizedBox(height: 20),
           Center(child: Text('The Jungle Book', style: Style.textStyle18)),

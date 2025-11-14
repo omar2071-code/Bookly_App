@@ -30,6 +30,10 @@ class ServerFailure extends Failure {
           return ServerFailure(
             'Received invalid status code: $statusCode - $statusMessage',
           );
+        } else if (dioException.response!.statusCode == 503) {
+          return ServerFailure(
+            'Service is temporarily. Please try again later.',
+          );
         } else {
           return ServerFailure('Received invalid response from API Service');
         }

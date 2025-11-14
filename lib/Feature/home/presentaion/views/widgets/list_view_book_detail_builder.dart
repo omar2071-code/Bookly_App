@@ -18,7 +18,10 @@ class ListviewBookDetailsBuilder extends StatelessWidget {
               height: height * .17,
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 5.0),
-                child: CustomBookImage(),
+                child: CustomBookImage(
+                  imageUrl:
+                      'https://books.google.com/books/content?id=FxMSp72ZghkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api',
+                ),
               ),
             ),
       ),
